@@ -12,5 +12,5 @@ To run it simply clone the repo and run `rackup`. Then access `localhost:9292`
 You can customize the `Ost.redis` url by setting the `REDIS_URL` environment variable.
 
 ## TODO
-- [ ] Display backup queues in a different table.
+- [x] Display backup queues in a different table.
   - [ ] Ability to re-enqueue an item.

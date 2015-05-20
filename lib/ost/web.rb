@@ -11,7 +11,11 @@ module Ost
     end
 
     def self.queues
-      queue_names.map { |name| Ost[name] }
+      queue_names.map { |name| Ost::Web[name] }
+    end
+
+    def self.[](queue)
+      Ost::Web::Queue.new(Ost[queue])
     end
   end
 end

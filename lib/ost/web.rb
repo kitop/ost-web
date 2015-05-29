@@ -6,7 +6,7 @@ module Ost
       begin
         cursor, results = Ost.redis.call("SCAN", cursor, "match", "ost:*")
         queues += results
-      end until results.empty?
+      end until results.empty? or cursor.to_i == 0
       queues.map { |queue| queue.sub(/^ost:/, "") }
     end
 

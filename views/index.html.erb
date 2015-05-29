@@ -42,7 +42,7 @@
           <% backups.each do |queue| %>
             <tr>
               <td>
-                <a href="/queues/<%= queue.href %>"><%= queue.name %></a>
+                <a href="/backups/<%= queue.href %>"><%= queue.name %></a>
               </td>
               <td><%= queue.hostname %></td>
               <td><%= queue.pid %></td>

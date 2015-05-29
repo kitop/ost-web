@@ -23,4 +23,8 @@ Cuba.define do
   on get, "queues/:id" do |id|
     render "queue.html", name: id, queue: Ost::Web[id]
   end
+
+  on get, "backups/:id" do |id|
+    render "backup.html", name: id, queue: Ost::Web[id]
+  end
 end

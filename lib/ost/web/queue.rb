@@ -23,6 +23,13 @@ module Ost
         key_parts[1..3].join(':')
       end
 
+      def running?
+        Process.getpgid pid.to_i
+        true
+      rescue
+        false
+      end
+
       private
 
       def key_parts

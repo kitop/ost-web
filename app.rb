@@ -1,5 +1,6 @@
 require "cuba"
 require "cuba/safe"
+require "tilt/erb"
 require "cuba/render"
 require "ost"
 

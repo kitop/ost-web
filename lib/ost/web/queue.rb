@@ -19,6 +19,10 @@ module Ost
         key_parts[3]
       end
 
+      def href
+        key_parts[1..3].join(':')
+      end
+
       private
 
       def key_parts

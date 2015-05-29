@@ -18,7 +18,7 @@
           <% queues.each do |queue| %>
             <tr>
               <td>
-                <a href="/queues/<%= queue.name %>"><%= queue.name %></a>
+                <a href="/queues/<%= queue.href %>"><%= queue.name %></a>
               </td>
               <td><%= queue.size %></td>
             </tr>
@@ -41,7 +41,9 @@
         <tbody>
           <% backups.each do |queue| %>
             <tr>
-              <td><%= queue.name %></td>
+              <td>
+                <a href="/queues/<%= queue.href %>"><%= queue.name %></a>
+              </td>
               <td><%= queue.hostname %></td>
               <td><%= queue.pid %></td>
             </tr>

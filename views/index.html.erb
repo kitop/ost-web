@@ -36,6 +36,7 @@
             <th>Queue</th>
             <th>Host</th>
             <th>PID</th>
+            <th>Items</th>
           </tr>
         </thead>
         <tbody>
@@ -46,6 +47,7 @@
               </td>
               <td><%= queue.hostname %></td>
               <td><%= queue.pid %></td>
+              <td><%= queue.size %></td>
             </tr>
           <% end %>
         </tbody>

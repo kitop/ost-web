@@ -29,13 +29,13 @@
               <td>
                 <form action="/backups/<%= queue.href %>" method="post">
                   <input type="hidden" name="item" value="<%= Rack::Utils.escape_html item %>" />
-                  <button class="btn btn-link">Re-enqueue</button>
+                  <button class="btn btn-link btn-sm btn-block">Re-enqueue</button>
                 </form>
 
                 <form action="/backups/<%= queue.href %>" method="post">
                   <input type="hidden" name="_method" value="delete" />
                   <input type="hidden" name="item" value="<%= Rack::Utils.escape_html item %>" />
-                  <button class="btn btn-link">Remove</button>
+                  <button class="btn btn-link btn-sm btn-block">Remove</button>
                 </form>
               </td>
             </tr>

@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Ost web</title>
+    <% if this.req[:refresh] %>
+      <meta http-equiv="refresh" content="<%= this.req[:refresh] %>">
+    <% end %>
     <meta name="description" content="Simple dashboard for Ost workers">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 

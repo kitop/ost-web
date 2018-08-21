@@ -1,22 +1,25 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cuba (3.4.0)
-      rack
-    hiredis (0.6.0)
+    cuba (3.9.2)
+      rack (>= 1.6.0)
+    hiredis (0.6.1)
     nido (0.0.1)
     ost (1.0.0)
       nido
       redic
-    rack (1.6.1)
+    rack (2.0.5)
     redic (1.5.0)
       hiredis
-    tilt (2.0.1)
+    tilt (2.0.8)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  cuba (~> 3.4.0)
+  cuba (~> 3.9.2)
   ost (~> 1.0.0)
   tilt (~> 2.0.1)
+
+BUNDLED WITH
+   1.16.1

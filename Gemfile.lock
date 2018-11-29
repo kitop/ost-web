@@ -11,7 +11,7 @@ GEM
     rack (2.0.6)
     redic (1.5.0)
       hiredis
-    tilt (2.0.8)
+    tilt (2.0.9)
 
 PLATFORMS
   ruby
@@ -19,7 +19,7 @@ PLATFORMS
 DEPENDENCIES
   cuba (~> 3.9.2)
   ost (~> 1.0.0)
-  tilt (~> 2.0.1)
+  tilt (~> 2.0.9)
 
 BUNDLED WITH
    1.16.1

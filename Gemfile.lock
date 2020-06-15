@@ -8,7 +8,7 @@ GEM
     ost (1.0.0)
       nido
       redic
-    rack (2.0.6)
+    rack (2.2.3)
     redic (1.5.0)
       hiredis
     tilt (2.0.10)
